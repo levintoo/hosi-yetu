@@ -1,3 +1,6 @@
+:root{
+    --backgroundblue: #ebfbff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,15 +16,22 @@ section svg{
     width: 100%;
     height: 100vh;
     z-index: -1;
-    background-color: #ebfbff;
+    background-color: var(--backgroundblue);
 
 }
-
+.navbar{
+    background-color: var(--backgroundblue);
+    height: auto;
+}
 .navbar > .navbar-brand > ul > a{
     color: black;
     text-decoration: none;
     margin-left: 3.125em;
     font-weight: 500;
+}
+
+.show-links{
+    transition: 1s;
 }
 
 .navbar > .navbar-brand > ul > a:hover{
@@ -33,4 +43,43 @@ section svg{
 .rotate-logo:hover{
     transform: rotate(720deg);
     transition: 3s;
+}
+
+
+
+
+.caurosel-container{
+    width: 100%;
+    position: absolute;
+    height: auto;
+    z-index: 0;
+}
+
+
+@media screen and (max-width :900px) {
+    .toggle-menu{
+        display: block;
+    }
+    .navbar-brand ul a{
+        display: none;
+    }
+    .show-links {
+        height: 10rem;
+        position: absolute;
+        background-color: var(--backgroundblue);
+        width: 48%;
+        top: 5rem;
+        border-radius: 10px;
+    }
+    .show-links a{
+        display: block !important;
+    }
+    .toggler{
+        transform: rotate(0deg);
+        transition: 1s;
+    }
+    /* .toggler:hover{
+        transform: rotate(180deg);
+        transition: 1s;
+    } */
 }
