@@ -16,3 +16,21 @@ section svg{
     background-color: #ebfbff;
 
 }
+
+.navbar > .navbar-brand > ul > a{
+    color: black;
+    text-decoration: none;
+    margin-left: 3.125em;
+    font-weight: 500;
+}
+
+.navbar > .navbar-brand > ul > a:hover{
+    color: red;
+}
+.rotate-logo{
+    transition: 1s;
+}
+.rotate-logo:hover{
+    transform: rotate(720deg);
+    transition: 3s;
+}
