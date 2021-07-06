@@ -6,8 +6,6 @@ let toggleButton= document.getElementById("menu-toggle");
 let links = document.querySelector(".links");
 
 
-toggleButton.style.transform ="rotate(0deg)";
-toggleButton.style.transition ="1s";
 
 
 toggleButton.addEventListener ("click", function(){
@@ -16,3 +14,4 @@ toggleButton.addEventListener ("click", function(){
     toggleButton.style.transform ="rotate(240deg)";
     toggleButton.style.transition ="1s";
 })
+

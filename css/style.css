@@ -45,38 +45,64 @@ section svg{
     transition: 3s;
 }
 
-
+.toggler{
+    display: none;
+}
 
 
 .caurosel-container{
     width: 100%;
     position: absolute;
-    height: auto;
-    z-index: 0;
+    height: auto;;
+}
+/* 
+section:first-child{
+    position: relative;
+} */
+
+.text-content{
+    position: absolute;
+    margin-left: 150px;
+}
+.text-content > p ,.text-content > h1 ,.text-content > button {
+    margin-top: 3rem;
+}
+.text-content > h1{
+    font-size: 5rem;
+}
+.text-content > p{
+    font-size: 3rem;
 }
 
 
+
 @media screen and (max-width :900px) {
-    .toggle-menu{
+    .toggler{
         display: block;
     }
     .navbar-brand ul a{
         display: none;
     }
     .show-links {
-        height: 10rem;
+        height: 13rem;
         position: absolute;
         background-color: var(--backgroundblue);
-        width: 48%;
+        width: 100%;
         top: 5rem;
+        left: 0;
         border-radius: 10px;
     }
     .show-links a{
         display: block !important;
+        width: 100%;
+        height: auto;
+        margin-bottom: 6px;
     }
+
     .toggler{
         transform: rotate(0deg);
         transition: 1s;
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     }
     /* .toggler:hover{
         transform: rotate(180deg);
