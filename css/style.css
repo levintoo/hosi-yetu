@@ -63,15 +63,17 @@ section:first-child{
 .text-content{
     position: absolute;
     margin-left: 150px;
+    width: 60%;
 }
 .text-content > p ,.text-content > h1 ,.text-content > button {
     margin-top: 3rem;
 }
 .text-content > h1{
-    font-size: 5rem;
+    margin-top: 8rem;
+    font-size: 4rem;
 }
 .text-content > p{
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 
